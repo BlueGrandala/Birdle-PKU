@@ -67,10 +67,10 @@ function checkGuess() {
     resultsDiv.innerHTML += `<div class="result">${result}</div>`;
 
     if (userInput === targetWord) {
-        alert(`Congratulations! You guessed the word in ${attempts} attempts.`);
+        alert(`牛逼! 只用 ${attempts} 次就猜对了.`);
         startGame();
     } else if (attempts >= maxAttempts) {
-        alert(`Game over! The word was ${targetWord}.`);
+        alert(`寄! 答案是 ${targetWord}.`);
         startGame();
     }
 
