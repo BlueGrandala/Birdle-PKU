@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .result {
+            margin: 20px;
+            font-size: 20px;
+        }
+        .correct {
+            color: green;
+        }
+        .present {
+            color: yellow;
+        }
+        .loading {
+            color: blue;
+        }
+        .hint {
+            color: purple;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Birdle PKU</h1>
+    <h3>猜测一种在北大出现过的鸟类!</h3>
+    <p id="loadingStatus" class="loading">Loading words...</p>
+    <p id="wordLengthHint"></p>
+    <p id="lastLetterHint" class="hint"></p>
+    <input type="text" id="userInput" placeholder="Enter a word">
+    <button onclick="checkGuess()">Submit</button>
+    <div id="results"></div>
+    <script src="game.js"></script>
+</body>
+</html>
